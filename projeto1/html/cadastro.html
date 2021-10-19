@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Ficha de Cadastro</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+  </head>
+  <body>
+
+    <header class="imagem1">
+      <div>
+       <h2>Ficha de Cadastramento</h2>
+      </div>  
+    </header>
+
+    <!-- Dados do Cliente -->
+
+    <section class="formulario responsivo">
+
+      <div class="titulo responsivo-titulo">
+        <h2>Dados do Cliente</h2>
+      </div>
+
+      <form class="form1 responsivo-form1">
+        <div class="container responsivo-container">
+
+          <div>
+              <label for="nome">Nome Completo:</label>
+              <input type="text" id="nome" name="usuario_nome" placeholder="Digite o seu nome...">
+          </div>
+
+          <div>
+              <label for="cpf">CPF:</label>
+              <input type="text" id="cpf" name="usuario_cpf" placeholder=" xxx.xxx.xxx-xx">
+          </div>
+
+          <div>
+            <label for="data">Data de Nascimento:</label>
+            <input id="data" type="date">
+          </div>
+
+          <div>
+            <label for="escolaridade">Escolaridade:</label>
+            <select name="usuario_escolaridade" id="escolaridade" placeholder="Selecione a sua escolaridade">
+              <option value="ENSINO FUNDAMENTAL COMPLETO">ENSINO FUNDAMENTAL COMPLETO</option>
+              <option value="ENSINO FUNDAMENTAL INCOMPLETO">ENSINO FUNDAMENTAL INCOMPLETO</option>
+              <option value="ENSINO MÉDIO COMPLETO">ENSINO MÉDIO COMPLETO</option>
+              <option value="ENSINO MÉDIO INCOMPLETO">ENSINO MÉDIO INCOMPLETO</option>
+              <option value="ENSINO SUPERIOR COMPLETO">ENSINO SUPERIOR COMPLETO</option>
+              <option value="ENSINO SUPERIOR INCOMPLETO">ENSINO SUPERIOR INCOMPLETO</option>
+              <option value="PÓS-GRADUAÇÃO COMPLETA">PÓS-GRADUAÇÃO COMPLETA</option>
+              <option value="PÓS-GRADUAÇÃO INCOMPLETA">PÓS-GRADUAÇÃO INCOMPLETA</option>
+              <option value="MESTRADO COMPLETO">MESTRADO COMPLETO</option>
+              <option value="MESTRADO INCOMPLETO">MESTRADO INCOMPLETO</option>
+              <option value="DOUTORADO COMPLETO">DOUTORADO COMPLETO</option>
+              <option value="DOUTORADO INCOMPLETO">DOUTORADO INCOMPLETO</option>  
+            </select>
+          </div>
+
+          <div>
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="usuario_endereco" placeholder="Digite seu endereco...">
+          </div>
+
+          <div>
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="usuario_bairro" placeholder="Digite seu bairro...">
+          </div>
+
+          <div>
+            <label for="municipio">Município:</label>
+            <input type="text" id="municipio" name="usuario_municipio" placeholder="Digite seu município...">
+          </div>
+
+          <div>
+            <label for="uf">UF:</label>
+            <select name="usuario_uf" id="uf">
+              <option value="CE" select>CE</option>
+              <option value="AC">AC</option>
+              <option value="AL">AL</option>
+              <option value="AM">AM</option>
+              <option value="AP">AP</option>
+              <option value="BA">BA</option>
+              <option value="DF">DF</option>
+              <option value="ES">ES</option>
+              <option value="GO">GO</option>
+              <option value="MA">MA</option>
+              <option value="MT">MT</option>
+              <option value="MS">MS</option>
+              <option value="MG">MG</option>
+              <option value="PA">PA</option>
+              <option value="PB">PB</option>
+              <option value="PR">PR</option>
+              <option value="PE">PE</option>
+              <option value="PI">PI</option>
+              <option value="RJ">RJ</option>
+              <option value="RN">RN</option>
+              <option value="RS">RS</option>
+              <option value="RO">RO</option>
+              <option value="RR">RR</option>
+              <option value="SC">SC</option>
+              <option value="SP">SP</option>
+              <option value="SE">SE</option>
+              <option value="TO">TO</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="usuario_cep" placeholder="Digite seu cep...">
+          </div>
+
+          <div>
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="usuario_telefone" placeholder="Digite seu telefone...">
+          </div>
+
+          <div>
+            <label for="celular">Celular:</label>
+            <input type="text" id="celular" name="usuario_celular" placeholder="Digite seu celular...">
+          </div>
+
+          <div>
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="usuario_email" placeholder="Digite seu email...">
+          </div>
+
+        </div>
+    </form>
+    </section>
+
+    <!-- Fim - Dados do Cliente -->
+    <hr>
+    <!-- Fim - Dados Profissionais -->
+
+    <section class=" formulario formulario2 responsivo">
+      <div class="titulo responsivo-titulo">
+        <h2>Dados Profissionais</h2>
+       </div>   
+      <form class="form1 responsivo-form1">
+        <div class="container responsivo-container">
+
+          <div>
+              <label for="RazaoSocial">Razão Social:</label>
+              <input type="text" id="RazaoSocial" name="usuario1_RazaoSocial" />
+          </div>
+
+          <div>
+              <label for="NomeFantasia">Nome da Fantasia:</label>
+              <input type="text" id="NomeFantasia" name="usuario1_Nome_Fantasia" />
+          </div>
+
+          <div>
+            <label for="cnpj1">CNPJ:</label>
+            <input type="text" id="cnpj1" name="usuario1_cnpj" />
+          </div>          
+
+          <div class="checkbox-ajeitar mover-checkbox responsividade-checkbox">
+            <h3>Ramo de Atividade:</h3>
+            <div>
+              <input type="checkbox" id="industria" name="usuario1_industria" />
+              <label for="industria">Indústria</label>
+            </div>
+           
+            <div>
+              <input type="checkbox" id="comercio" name="usuario1_comercio" />
+              <label for="comercio">Comércio</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="servico" name="usuario1_servico" />
+              <label for="servico">Serviço</label>
+            </div >
+          </div><!--Ramo de atividade-->
+
+          <div>
+            <label for="endereco1">Endereço:</label>
+            <input type="text" id="endereco1" name="usuario1_endereco" />
+          </div>
+
+          <div>
+            <label for="bairro1">Bairro:</label>
+            <input type="text" id="bairro1" name="usuario1_bairro" />
+          </div>
+
+          <div>
+            <label for="municipio1">Município:</label>
+            <input type="text" id="municipio1" name="usuario1_municipio" />
+          </div>
+
+          <div>
+            <label for="uf1">UF:</label>
+            <select name="usuario1_uf" id="uf1">
+              <option value="CE" select>CE</option>
+              <option value="AC">AC</option>
+              <option value="AL">AL</option>
+              <option value="AM">AM</option>
+              <option value="AP">AP</option>
+              <option value="BA">BA</option>
+              <option value="DF">DF</option>
+              <option value="ES">ES</option>
+              <option value="GO">GO</option>
+              <option value="MA">MA</option>
+              <option value="MT">MT</option>
+              <option value="MS">MS</option>
+              <option value="MG">MG</option>
+              <option value="PA">PA</option>
+              <option value="PB">PB</option>
+              <option value="PR">PR</option>
+              <option value="PE">PE</option>
+              <option value="PI">PI</option>
+              <option value="RJ">RJ</option>
+              <option value="RN">RN</option>
+              <option value="RS">RS</option>
+              <option value="RO">RO</option>
+              <option value="RR">RR</option>
+              <option value="SC">SC</option>
+              <option value="SP">SP</option>
+              <option value="SE">SE</option>
+              <option value="TO">TO</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="cep1">CEP:</label>
+            <input type="text" id="cep1" name="usuario1_cep" />
+          </div>
+
+          <div>
+            <label for="telefone1">Telefone:</label>
+            <input type="text" id="telefone1" name="usuario1_telefone" />
+          </div>
+
+          <div>
+            <label for="celular1">Celular:</label>
+            <input type="text" id="celular1" name="usuario1_celular"/>
+          </div>
+
+          <div>
+            <label for="email1">E-mail:</label>
+            <input type="text" id="email1" name="usuario1_email" />
+          </div>  
+
+        </div>
+    </form>
+    </section>
+
+     <!-- Fim - Dados Profissionais -->
+    <hr>
+      <!-- Tipo de Empresa-->
+
+    <section class="formulario formulario2 responsivo">
+      <div class="titulo titulo2x responsivo-titulo">
+        <h2>Tipo de Empresa</h2>
+       </div>  
+      <form class="form1 responsivo-form1">
+        <div class="container responsivo-container">
+
+          <div class="checkbox-ajeitar responsividade-checkbox">
+            <div>
+              <input type="checkbox" id="mei" name="usuario2_mei" />
+              <label for="mei">Mei (até R$ 81 Mil)</label>
+            </div>
+            
+            <div>
+              <input type="checkbox" id="MicroEmpresa" name="usuario2_MicroEmpresa" />
+              <label for="MicroEmpresa">Micro Empresa (entre R$ 81 Mil e R$ 360 Mil) </label>
+            </div>  
+            
+            <div>
+              <input type="checkbox" id="EPP" name="usuario2_EPP" />
+              <label for="EPP">EPP (R$ 360 Mil e R$ 3,6 Milhões)</label>
+            </div>  
+            
+            <div>
+              <input type="checkbox" id="empreendedor" name="usuario2_empreendedor" />
+              <label for="empreendedor">Potencial Empreendedor</label>
+            </div>
+            
+            <div>
+              <input type="checkbox" id="informal" name="usuario2_informal" />
+              <label for="informal">Informal</label>
+            </div>  
+          </div>
+
+        </div>
+    </form>
+    </section>
+
+    <!--Tipo de Empresa-->
+    <hr>
+    <!--Atendimento Recebido-->
+    <section class="formulario formulario3 responsivo">
+      <div class="titulo titulo3 responsivo-titulo">
+        <h2>Atendimento Recebido</h2>
+       </div>  
+      <form class="form1 responsivo-form1">
+        <div class="container responsivo-container">
+         
+          <div>
+            <label for="data">Selecione a Data do Atendimento:</label>
+            <input id="data" type="date">
+          </div>
+
+          <div>
+            <label for="Local_Atendimento">Local de Atendimento:</label>
+            <select name="usuario3_Local_Atendimento" id="Local_Atendimento">
+              <option value="centro">Centro Fashion</option>
+              <option value="mucuripe">Mucuripe Moda Center</option>
+              <option value="online">Online</option>
+            </select>
+          </div>
+
+          <div class="checkbox-ajeitar responsividade-checkbox">
+            
+              <div>
+                <input type="checkbox" id="AberturaEmpresa" name="usuario3_AberturaEmpresa" />
+                <label for="AberturaEmpresa">Abertura de Empresa</label>
+              </div>
+              
+              <div>
+                <input type="checkbox" id="CCMEI" name="usuario3_CCMEI" />
+                <label for="CCMEI">Comprovante de certificado do MEI - CCMEI</label>
+              </div>  
+              
+              <div>
+                <input type="checkbox" id="cnpj2" name="usuario3_CNPJ" />
+                <label for="cnpj2">CNPJ</label>
+              </div>  
+              
+              <div>
+                <input type="checkbox" id="DAS" name="usuario3_DAS" />
+                <label for="DAS">Emissão Boletos (DAS)</label>
+              </div>
+              
+              <div>
+                <input type="checkbox" id="DeclaracaoAnual" name="usuario3_DeclaracaoAnual" />
+                <label for="DeclaracaoAnual">Declaração Anual</label>
+              </div>  
+
+              
+              <div>
+                <input type="checkbox" id="AtualizacaoDados" name="usuario3_AtualizacaoDados" />
+                <label for="AtualizacaoDados">Atualização de Dados</label>
+              </div>
+              
+              <div>
+                <input type="checkbox" id="BaixaEmpresa" name="usuario3_BaixaEmpresa" />
+                <label for="BaixaEmpresa">Baixa de Empresa</label>
+              </div>  
+              
+              <div>
+                <input type="checkbox" id="Dividas" name="usuario3_Dividas" />
+                <label for="Dividas">Parcelamento de Dividas</label>
+              </div>  
+              
+              <div>
+                <input type="checkbox" id="DesenquadramentoMEI" name="usuario3_DesenquadramentoMEI" />
+                <label for="DesenquadramentoMEI">Desenquadramento do MEI</label>
+              </div>
+              
+              <div>
+                <input type="checkbox" id="NotaFiscal" name="usuario3_NotaFiscal" />
+                <label for="NotaFiscal">Emissão de Nota Fiscal</label>
+              </div> 
+
+              <div>
+                <input type="checkbox" id="Sefim" name="usuario3_Sefim" />
+                <label for="Sefim">Cadastro de Sefim</label>
+              </div>
+              
+              <div>
+                <input type="checkbox" id="Sefaz" name="usuario3_Sefaz" />
+                <label for="Sefaz">Cadastro Sefaz</label>
+              </div>  
+              
+              <div>
+                <input type="checkbox" id="Comprovantes" name="usuario3_Comprovantes" />
+                <label for="Comprovantes">Certidões e Comprovantes</label>
+              </div>  
+              
+              <div>
+                <input type="checkbox" id="OrientacaoEmpresarial" name="usuario3_OrientacaoEmpresarial" />
+                <label for="OrientacaoEmpresarial">Orientação Empresarial / MEI</label>
+              </div>
+              
+              <div>
+                <input type="checkbox" id="Outros" name="usuario3_Outros" />
+                <label for="Outros">Outros</label>
+              </div> 
+
+          </div>
+
+          <div class="ajeitar">
+            <label for="textoOutros">Quais?</label>
+            <input type="text" id="textoOutros" name="usuario3_textoOutros">
+          </div>
+
+        </div>
+    </form>
+    </section>
+    <!-- Fim- Atendimento Recebido -->
+    <hr>
+    <!-- Encaminhamento -->
+    <section class="formulario formulario4 responsivo">
+      <div class="titulo titulo4 responsivo-titulo">
+        <h2>Encaminhamento</h2>
+       </div>  
+      <form class="form1 responsivo-form1">
+        <div class="container responsivo-container">
+          
+          <div class="checkbox-ajeitar responsividade-checkbox">
+            <div>
+              <input type="checkbox" id="AberturaEmpresa" name="usuario3_AberturaEmpresa" />
+              <label for="AberturaEmpresa">Contador</label>
+            </div>
+            
+            <div>
+              <input type="checkbox" id="inss" name="usuario4_inss" />
+              <label for="inss">INSS</label>
+            </div>  
+            
+            <div>
+              <input type="checkbox" id="AberturaConta" name="usuario4_AberturaConta" />
+              <label for="AberturaConta">Abertura de Conta</label>
+            </div>  
+            
+            <div>
+              <input type="checkbox" id="CapitalGiro" name="usuario4_CapitalGiro" />
+              <label for="CapitalGiro">Capital de Giro - Financiamento</label>
+            </div>
+            
+            <div>
+              <input type="checkbox" id="Patentes" name="usuario4_Patentes" />
+              <label for="Patentes">Marcas e Patentes</label>
+            </div>  
+
+            <div>
+              <input type="checkbox" id="negocios" name="usuario4_negocios" />
+              <label for="negocios">Consultoria de Negócios</label>
+            </div>
+            
+            <div>
+              <input type="checkbox" id="marketing" name="usuario4_marketing" />
+              <label for="marketing">Marketing Digital</label>
+            </div>  
+            
+            <div>
+              <input type="checkbox" id="ReceitaFederal" name="usuario4_ReceitaFederal" />
+              <label for="ReceitaFederal">Receita Federal</label>
+            </div>  
+            
+          </div>  
+       </div>
+    </form>
+    </section>
+     <!-- Fim - Encaminhamento -->
+    <hr>
+     <!-- Serviços -->
+    <section class="formulario formulario5 responsivo">
+      <div class="titulo titulo5 responsivo-titulo">
+        <h2>Serviços</h2>
+       </div>   
+      <form class="form1">
+        <div class="container">
+          
+          <div class="checkbox-ajeitar servicos ">
+              <div class="servicos0">
+                <h3>1- Você tem Registro de Marca?</h3>  
+                <div class="responsivo-ajeitar">
+                  <input type="radio" id="RegistroMarca" name="RegistroMarca" value="RegistroMarca">
+                  <label for="html">Sim</label>
+                </div>
+                <div>
+                  <input type="radio" id="RegistroMarca" name="RegistroMarca" value="RegistroMarca">
+                  <label for="html">Não</label>
+                </div> 
+              </div>
+                
+              <div class="servicos0">
+                <h3>2- Você tem E-Commerce?</h3>
+                <div class="responsivo-ajeitar">  
+                  <input type="radio" id="e_commerce" name="e_commerce" value="e_commerce">
+                  <label for="html">Sim</label>
+                </div>
+                <div class="responsivo-ajeitar">
+                  <input type="radio" id="e_commerce" name="e_commerce" value="e_commerce">
+                  <label for="html">Não</label>
+                </div>  
+              </div>
+
+              <div class="servicos0">
+                <h3>3- Você tem Logística e Financeiro?</h3>  
+                <div class="responsivo-ajeitar">
+                  <input type="radio" id="Logística" name="Logística" value="Logística">
+                  <label for="html">Sim</label>
+                </div>
+                <div class="responsivo-ajeitar">
+                  <input type="radio" id="Logística" name="Logística" value="Logística">
+                  <label for="html">Não</label>
+                </div>
+              </div>  
+
+              <div class="servicos0">
+                <h3>4- Você tem Contabilidade?</h3>  
+                <div class="responsivo-ajeitar">
+                  <input type="radio" id="Contabilidade" name="Contabilidade" value="Contabilidade">
+                  <label for="html">Sim</label>
+                </div>
+                <div class="responsivo-ajeitar">
+                  <input type="radio" id="Contabilidade" name="Contabilidade" value="Contabilidade">
+                  <label for="html">Não</label>
+                </div>
+              </div>  
+
+              <div class="servicos0">
+                <h3>5- Você tem Orientação Jurídica?</h3>  
+                <div class="responsivo-ajeitar">
+                  <input type="radio" id="Juridica" name="Juridica" value="Juridica">
+                  <label for="html">Sim</label>
+                </div>
+                <div class="responsivo-ajeitar">
+                  <input type="radio" id="Juridica" name="Juridica" value="Juridica"> 
+                  <label for="html">Não</label>
+                </div>
+              </div>  
+
+              <div class="servicos0">
+                <h3>6- Você tem Sistema Comercial?</h3>  
+                <div class="responsivo-ajeitar">
+                  <input type="radio" id="SistemaComercial" name="SistemaComercial" value="SistemaComercial">
+                  <label for="html">Sim</label>
+                </div>
+                <div class="responsivo-ajeitar">
+                  <input type="radio" id="SistemaComercial" name="SistemaComercial" value="SistemaComercial">
+                  <label for="html">Não</label>
+                </div>
+              </div>  
+
+            </div>
+
+        </div>
+    </form>
+    </section>
+      <!-- Fim - Serviços -->
+
+    <section class="botao">
+
+      <div>
+        <p><a href="" style="color: white;">SALVAR</a></p>
+      </div>  
+      <div>
+        <p><a href="menu.html" style="color: white;">CANCELAR</a></p>
+      </div>    
+    </section>
+
+
+  </body>
+</html>
