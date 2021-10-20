@@ -20,7 +20,7 @@ a {
   display: block;
 }
 
-input{
+input {
   border: none;
   border-bottom: 1px solid black;
 }
@@ -379,11 +379,11 @@ input{
   }
 }
 /*======================================= MENU =======================================*/
-.imagem12{
+.imagem12 {
   height: 200px;
 }
 
-.menu{
+.menu {
   margin-top: 5%;
   width: 100%;
   text-align: center;
@@ -394,65 +394,86 @@ input{
   margin-bottom: 5%;
 }
 
-.menu a{
+.menu a {
   font-weight: bold;
   text-align: center;
   border-radius: 15px;
-  font-size: 25px;  
-  margin:10px;
+  font-size: 25px;
+  margin: 10px;
   padding: 30px;
-  width: 30%;  
+  width: 30%;
   background-color: #3a4d8f;
   color: white;
 }
 
-@media screen and (max-width:500px){
-  .menu a{
+@media screen and (max-width: 500px) {
+  .menu a {
     width: 50%;
   }
 }
 
-@media screen and (max-width:400px){
-  .menu a{
+@media screen and (max-width: 400px) {
+  .menu a {
     width: 80%;
-    }
-
+  }
 }
 /*======================================= PESQUISAR =======================================*/
 
-.pesquisar{
-  border: 1px solid red;
+.pesquisar {
   width: 100%;
   height: 50%;
   text-align: center;
 }
 
-.pesquisar form{
+.pesquisar form {
   width: 100%;
   height: 100%;
 }
 
-.pesquisar form div input{
+.pesquisar form div input {
   width: 30%;
   border: none;
   border-bottom: 1px solid black;
 }
 
-.pesquisar form div{
-  margin-top:50px
+.pesquisar form div label {
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.pesquisar form div div{
+.pesquisar form div {
+  margin-top: 50px;
+}
+
+.pesquisar form div div {
   margin: 0 15px;
   display: inline-block;
 }
 
-.pesquisar form div div a{
+.pesquisar form div div a {
   padding: 8px;
   border-radius: 20px;
   background-color: #3a4d8f;
   color: white;
 }
 
+/*------------- Responsividade---------*/
 
+@media screen and (max-width: 737px) {
+  .pesquisar form div input {
+    margin-top: 30px;
+    width: 80%;
+    border: 1px solid black;
+    padding: 2.5px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
 
+  .pesquisar form div div {
+    margin-top: 15px;
+  }
+
+  .pesquisar form div div a {
+    padding: 10px 20px;
+  }
+}
