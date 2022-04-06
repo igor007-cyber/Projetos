@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+html,body{
+    height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+label{
+    color: rgb(255, 187, 0);
+    font-weight: bold;  
+    font-size: 22px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.clear{
+    clear: both;
+}
+
+@font-face {
+    font-family: Lobster;
+    src: url(./fonte/Lobster-Regular.ttf);
+}
+
+/*-------------- MENU -----------------*/
+
+.cabecalho{
+    width: 100%;
+    height: 46vmax;
+    position: relative;
+}
+
+.logo-menu{
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+}
+
+.logo img{
+    width: 407px;
+    height: 111px;
+    border-bottom-right-radius: 40px;
+}
+
+.logo-menu .logo{
+    color: white;
+    float: left;
+}
+
+.logo-menu .menu{
+    float: right;
+    margin-top: 30px;
+    margin-right: 50px;
+    
+}
+
+.logo-menu .menu ul li{
+    list-style-type: none;
+    padding: 20px;
+}
+
+.logo-menu .menu ul li a{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 21px;
+}
+
+.logo-menu .menu ul li a:hover{
+    color: #00cef7;
+}
+
+/*----- VIDEO -----*/
+.videBlack .video{
+    transform: translateY(-24%);
+    width: 100%;
+    height: 50%;
+    z-index: 999;
+}
+
+/*----- RESPONSIVIDADE -----*/
+
+@media screen and (min-width: 400px) {
+  .logo-menu{
+    height: calc(90% + 9px);
+    }   
+} 
+
+@media screen and (max-width: 647px) {
+    .videBlack .video{
+    transform: translateY(-12%);
+    }
+} 
+
+@media screen and (max-width: 550px) {
+    .videBlack .video{
+    transform: translateY(-3%);
+    }
+} 
+
+@media screen and (max-width: 515px) {
+    .videBlack .video{
+    transform: translateY(-1%);
+    }
+} 
+
+@media screen and (max-width: 650px){
+    .logo img {
+        width: 300px;
+        height: 80px;
+        border-bottom-right-radius: 40px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .videBlack .video{
+        transform: translateY(15%);
+    }
+
+    .logo-menu .menu{
+        margin-left: 50px;
+    }    
+
+    .logo-menu .menu ul li{
+        padding: none;
+        display: flex;
+    }
+} 
+
+@media screen and (max-width: 460px) {
+    .videBlack .video{
+        transform: translateY(19%);
+    }
+} 
+
+@media screen and (max-width: 445px) {
+    .videBlack .video{
+        transform: translateY(25%);
+    }
+} 
+
+/*-------------- CORPO -----------------*/
+
+.corpo{
+    width: 100%;
+}
+
+.corpo .imagem{
+    float: left;
+    margin-left: 4%;
+    margin-bottom: 2%;
+}
+
+.corpo .texto{
+    float: right;
+    margin-right: 4%;
+    margin-bottom: 2%;
+}
+
+
+.corpo .imagem img{
+   box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+   margin-bottom: 2%;
+   border: black solid 1px;
+   width: 500px;
+   height: 500px;
+}
+
+.corpo .texto img{
+   box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+   margin-bottom: 2%;
+}
+
+.corpo .texto1 p{
+    font-family: Lobster;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    padding: 5%;
+    
+}
+
+.corpo .texto1 .tema h2{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+
+.corpo .texto1 .tema{
+    justify-content: center;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    background-color: orange;
+}
+
+.corpo .texto1 p, .corpo .texto1 h2{
+    text-align: center;
+}
+.corpo .texto1 h2{
+    margin-left: 20%;
+}
+
+
+/*--------RESPONSIVIDADE Corpo----------*/
+
+@media screen and (max-width: 1136px){
+  .corpo .imagem img, .corpo .texto img{
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 1078px){
+  .corpo .imagem img, .corpo .texto img{
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 910px){
+  .corpo .imagem img,.corpo .texto img{
+    width: 350px;
+    height: 350px;
+    
+  }
+}
+
+@media screen and (max-width: 876px){
+  .corpo .imagem img,.corpo .texto img{
+    width: 350px;
+    height: 350px;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 839px){
+  
+    .corpo .imagem1{
+    float: none;
+    display: flex;
+    justify-content: center;
+   }
+
+   .corpo .texto1{
+     float: none;
+     display: flex;
+     justify-content: center;
+     
+     flex-direction: column;
+     align-items: center;
+   }
+   
+   .corpo .imagem img,.corpo .texto img{
+    width: 450px;
+    height: 450px;
+    float: none;
+  }
+
+  .corpo .imagem2, .corpo .texto{
+      float: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  } 
+
+  .corpo .texto1 p{
+     width: 100%;
+     margin-right: 10%;
+  }
+  .corpo .texto1 .tema{
+      margin-top: 5%;
+      float: none;
+      justify-content: center;
+      width: 100%;
+  }
+
+  .corpo .texto{
+    margin-right: 0%;
+}
+  
+}
+
+@media screen and (max-width: 544px){
+    .corpo .imagem1 img,.corpo .texto img,.corpo .imagem2 img{
+        width: 350px;
+        height: 350px;
+        margin-right: 10px;
+    }
+}
+
+/*-------------- Contato -----------------*/
+
+.contato{
+    margin-top: 8%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    background-image: url('https://www.aldo.com.br/blog/wp-content/uploads/2022/02/blog_aldosolar_Solar-eolica-juntas-segunda-maior-participacao-oferta-de-energia-2021-1024x587.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contato h1{
+    font-family: Lobster;
+    color: rgb(158, 103, 0);
+    font-size: 60px;
+}
+
+.contato .formulario{       
+   display: flex;
+   justify-content: baseline; 
+   flex-direction: column;
+   align-content: center;
+   min-width: 500px;
+   height: 50%;
+   background-color: rgba(0, 0, 0, 0.3); 
+   margin-bottom: 30px;
+}
+
+.contato .formulario .posicao{
+    margin-top: 5%;
+}
+
+.posicao input, .posicao1 input, textarea{
+    min-width: 90%;
+}
+
+.organizar{
+    margin-left: 5%;
+}
+
+input{
+    width: 95%;
+    height: 25px;
+}
+
+
+textarea {
+  resize: none;
+  width: 95%;
+  height: 200px;
+}
+
+@media screen and (max-width: 529px){
+    .contato .formulario{       
+        min-width: 400px;
+    }
+}
+
+/*-------------- Rodapé -----------------*/
+
+.rodape{
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(to right, rgb(255, 123, 0),rgba(255,0,0,0));
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}   
+
+.rodape .logoMarca img{
+    margin-top: 30px;
+}

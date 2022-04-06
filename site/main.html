@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title></title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">	
+        <!-- Logo / MENU -->
+        <div class="logo-menu">
+
+            <div class="logo">
+                <img src="imagens/logo_nome_fundo_branco.png" alt="logo">
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="main.html">Home</a>
+                        <a href="#sobre">Sobre</a>
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </div>
+
+        <div class="videBlack">
+            <div class="black"></div>
+            <video autoplay muted loop class="video">
+            <source src="imagens/energia.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </header>
+    
+    <!--corpo-->
+    <section class="corpo" id="sobre">
+        <div class="imagem imagem1">
+            <img src="./imagens/trabalhador.png" alt="sócio" width="500" height="500">
+        </div>
+        <div class="texto1">
+            <div class="tema">
+                <h2>NOSSA EMPRESA</h2>
+            </div>
+            <p style="color: rgb(63, 149, 248); font-size: 40px; padding-left: 150px;">
+                Trazendo pra você uma energia renovavel pra sua casa ou pra sua cidade
+            </p>
+        </div>
+        <div class="clear"></div>
+    </section>
+<!--////////-->
+     <section class="corpo">
+        <div class="imagem imagem2">
+           <img src="./imagens/tetoSolar.png" alt="Solar" width="500" height="500">
+            <center><p style="color: rgb(20, 35, 117); font-weight: bold; font-size: 18px;">Energia Solar</p></center>
+        </div>
+        <div class="texto imagem">
+            <img src="./imagens/eolica.png" alt="eolica" width="500" height="500">
+            <center><p style="color: rgb(20, 35, 117);font-weight: bold; font-size: 18px;">Energia Eólica</p></center>
+        </div>
+        <div class="clear"></div>
+    </section>
+
+    <section class="contato" id="contato">
+        <h1>Fale Conosco</h1>
+         <form class="formulario">
+            <div class="posicao organizar">
+                <label for="fname">Nome:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+            </div>
+            <div class="posicao1 organizar">
+                <label for="lname">E-mail:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+            </div>
+            <div class="posicao2 organizar">
+                <label for="lname">Mensagem:</label><br>
+                <textarea name="text" id="paragrafo"></textarea><br><br>
+            </div>
+        </form> 
+    </section>
+    
+    <!--Rodapé-->
+    <footer class="rodape">
+        <div class="logoMarca">
+            <img src="./imagens/logo_full_vertical.png" alt="logo" width="200" height="160">
+        </div>
+    </footer>
+</body>
+</html>
